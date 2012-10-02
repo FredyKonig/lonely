@@ -40,3 +40,4 @@ module Lonely
     config.filter_parameters += [:password]
   end
 end
+
