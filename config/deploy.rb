@@ -1,27 +1,19 @@
-default_run_options[:pty] = true
+default_run_options[:pty] = true # Must be set for the password prompt from git to work
 
 require 'bundler/capistrano'
 
-set :application, "lonely"
-set :repository,  "git@github.com:FredyKonig/lonely.git"
+set :application, "lonely" # Your application location on your server goes here
 
-set :scm, :git
+set :scm, :git #repository type
+set :repository,  "git@github.com:FredyKonig/lonely.git" # Your clone URL
 
-set :deploy_to, "/var/www/#{application}"
+set :stages, %w(staging production) #available environment
+set :default_stage, "staging" #default environment
+require 'capistrano/ext/multistage' #options for using multi environment
 
-set :deploy_via, 'remote_cache'
+set :deploy_to, "/var/www/#{application}" #path destination
 
-set :ssh_options, {
-  :forward_agent => true
-}
+set :deploy_via, 'checkout'
 
-# Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
-
-# If you are using Passenger mod_rails uncomment this:
-# if you're still using the script/reapear helper you will need
-# these http://github.com/rails/irs_process_scripts
-
-role :app, "127.0.0.1"
-role :web, "127.0.0.1"
-role :db, "127.0.0.1", :primary => true
+before "deploy:setup", "deploy:setup_env"
 
