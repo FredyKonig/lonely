@@ -1,5 +1,4 @@
 set :user, "master" # The server's user for deploys
-set :password, "THEking21"
 
 set :use_sudo, false # options to enable sudo
 
