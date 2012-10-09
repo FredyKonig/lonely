@@ -13,7 +13,7 @@ require 'capistrano/ext/multistage' #options for using multi environment
 
 set :deploy_to, "/var/www/#{application}" #path destination
 
-set :deploy_via, 'checkout'
+set :deploy_via, :checkout
 
-before "deploy:setup", "deploy:setup_env"
+before "deploy", "deploy:setup_env"
 

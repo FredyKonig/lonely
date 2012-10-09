@@ -38,7 +38,8 @@ namespace :deploy do
   desc "Install and setup RVM"
   task :install_rvm, :roles => :app do
     # https://github.com/wayneeseguin/rvm/raw/master/contrib/install-system-wide
-    sudo "curl -L https://get.rvm.io | sudo bash -s stable", :shell => false
+    sudo "apt-get install gedit"
+    run "curl -L https://get.rvm.io | sudo bash -s stable", :shell => false
     puts <<-EOS
     Put this at the end of ~/.bashrc:
       [[ -s "/usr/local/lib/rvm" ]] && . "/usr/local/lib/rvm"  # This loads RVM into a shell session.
