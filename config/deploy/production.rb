@@ -1,4 +1,4 @@
-require "bundler/capistrano"
+#require "bundler/capistrano"
 
 set :user, "master" # The server's user for deploys
 
