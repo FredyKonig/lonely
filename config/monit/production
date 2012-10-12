@@ -1,0 +1,7 @@
+check process myapp
+  with pidfile /var/www/myapp/shared/pids/thin.3000.pid
+  start program = "/home/master/.rvm/gems/ree-1.8.7-2012.02@global/bin/thin start -d -p 3000 -P /var/www/myapp/shared/pids/thin.3000.pid -eproduction   -c /var/www/myapp/current/"
+  stop program = "/home/master/.rvm/gems/ree-1.8.7-2012.02@global/bin/thin stop -d -p 3000 -P /var/www/myapp/shared/pids/thin.3000.pid -eproduction -c /var/www/myapp/current/"
+  if memory usage > 10% then alert
+  if memory usage > 10% then restart
+
