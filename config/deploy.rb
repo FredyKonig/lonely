@@ -27,11 +27,10 @@ end
 after "deploy:setup", :check_monit_directory
 
 task :symlink_monit_file, :roles => :app do
-  with_role :web do
-    run "(test -L /etc/monit/conf.d/myapp && #{sudo} rm /etc/monit/conf.d/myapp) || echo 'no existing path monit file symlink'"
-    sudo "ln -s #{current_path}/config/monit/#{stage} /etc/monit/conf.d/myapp"
-  end
+  run "(test -L /etc/monit/conf.d/myapp && #{sudo} rm /etc/monit/conf.d/myapp) || echo 'no existing path monit file symlink'"
+  sudo "ln -s #{current_path}/config/monit/#{stage} /etc/monit/conf.d/myapp"
 end
+
 after "deploy:symlink", :symlink_monit_file
 
 
