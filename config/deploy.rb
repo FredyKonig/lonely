@@ -26,7 +26,7 @@ end
 
 after "deploy:setup", :check_monit_directory
 
-task :symlink_monit_file do
+task :symlink_monit_file, :roles => :app do
   with_role :web do
     run "(test -L /etc/monit/conf.d/myapp && #{sudo} rm /etc/monit/conf.d/myapp) || echo 'no existing path monit file symlink'"
     sudo "ln -s #{current_path}/config/monit/#{stage} /etc/monit/conf.d/myapp"
@@ -36,18 +36,14 @@ after "deploy:symlink", :symlink_monit_file
 
 
 namespace :deploy do
-  task :stop, :on_error => :continue do
-    with_role :web do
+  task :stop, :roles => :app, :on_error => :continue do
       sudo "monit stop -g myapp"
-    end
   end
 
-  task :start, :on_error => :continue do
-    with_role :web do
+  task :start, :roles => :app, :on_error => :continue do
       sudo "monit reload"
       sleep 5
       sudo "monit start -g myapp"
-    end
   end
 
 end
