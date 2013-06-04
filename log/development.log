@@ -1,22 +1,189 @@
-
-
-Started GET "/" for 127.0.0.1 at Wed Oct 10 17:21:01 +0300 2012
-  Processing by ParserController#index as HTML
-Rendered parser/index.html.erb within layouts/application (1.5ms)
-Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/static/routes.js" for 127.0.0.1 at Wed Oct 10 17:21:02 +0300 2012
-
-ActionController::RoutingError (No route matches "/static/routes.js"):
-  
-
-Rendered /home/rakotobe/.rvm/gems/ree-1.8.7-2010.02@rails238bis/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
-
-
-Started GET "/public/stylesheets/all.css" for 127.0.0.1 at Wed Oct 10 17:21:02 +0300 2012
-
-ActionController::RoutingError (No route matches "/public/stylesheets/all.css"):
-  
-
-Rendered /home/rakotobe/.rvm/gems/ree-1.8.7-2010.02@rails238bis/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+127.0.0.1 - - [12/Oct/2012:10:26:09 +0300] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:10:26:11 +0300] "GET /stylesheets/all.css?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:10:26:11 +0300] "GET /javascripts/prototype.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:10:26:11 +0300] "GET /javascripts/effects.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:10:26:11 +0300] "GET /javascripts/dragdrop.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:10:26:11 +0300] "GET /javascripts/controls.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:10:26:11 +0300] "GET /javascripts/rails.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:10:26:11 +0300] "GET /javascripts/application.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:10:26:11 +0300] "GET /static/routes.js HTTP/1.1" 404 373
+127.0.0.1 - - [12/Oct/2012:10:26:11 +0300] "GET /public/stylesheets/all.css HTTP/1.1" 404 378
+127.0.0.1 - - [12/Oct/2012:10:31:44 +0300] "GET / HTTP/1.1" 200 2173
+127.0.0.1 - - [12/Oct/2012:10:31:45 +0300] "GET /javascripts/dragdrop.js?1349165806 HTTP/1.1" 200 7556
+127.0.0.1 - - [12/Oct/2012:10:31:45 +0300] "GET /javascripts/effects.js?1349165806 HTTP/1.1" 200 8723
+127.0.0.1 - - [12/Oct/2012:10:31:45 +0300] "GET /javascripts/controls.js?1349165806 HTTP/1.1" 200 9039
+127.0.0.1 - - [12/Oct/2012:10:31:45 +0300] "GET /javascripts/rails.js?1349165806 HTTP/1.1" 200 1906
+127.0.0.1 - - [12/Oct/2012:10:31:45 +0300] "GET /javascripts/application.js?1349165806 HTTP/1.1" 200 136
+127.0.0.1 - - [12/Oct/2012:10:31:45 +0300] "GET /stylesheets/all.css?1349165806 HTTP/1.1" 200 19095
+127.0.0.1 - - [12/Oct/2012:10:31:45 +0300] "GET /javascripts/prototype.js?1349165806 HTTP/1.1" 200 36950
+127.0.0.1 - - [12/Oct/2012:10:31:45 +0300] "GET /public/stylesheets/all.css HTTP/1.1" 404 378
+127.0.0.1 - - [12/Oct/2012:10:31:45 +0300] "GET /static/routes.js HTTP/1.1" 404 373
+127.0.0.1 - - [12/Oct/2012:10:31:45 +0300] "GET /public/stylesheets/all.css HTTP/1.1" 404 378
+127.0.0.1 - - [12/Oct/2012:10:34:29 +0300] "GET / HTTP/1.1" 200 2170
+127.0.0.1 - - [12/Oct/2012:10:34:30 +0300] "GET /static/routes.js HTTP/1.1" 404 373
+127.0.0.1 - - [12/Oct/2012:10:34:30 +0300] "GET /public/stylesheets/all.css HTTP/1.1" 404 378
+127.0.0.1 - - [12/Oct/2012:10:34:30 +0300] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:10:40:08 +0300] "POST /phpmyadmin/index.php HTTP/1.1" 404 377
+127.0.0.1 - - [12/Oct/2012:14:56:35 +0300] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:36 +0300] "GET /static/routes.js HTTP/1.1" 404 373
+127.0.0.1 - - [12/Oct/2012:14:56:36 +0300] "GET /public/stylesheets/all.css HTTP/1.1" 404 378
+127.0.0.1 - - [12/Oct/2012:14:56:41 +0300] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:41 +0300] "GET /stylesheets/all.css?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:41 +0300] "GET /javascripts/prototype.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:41 +0300] "GET /javascripts/effects.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:41 +0300] "GET /javascripts/dragdrop.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:41 +0300] "GET /javascripts/controls.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:41 +0300] "GET /javascripts/rails.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:41 +0300] "GET /javascripts/application.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:41 +0300] "GET /public/stylesheets/all.css HTTP/1.1" 404 378
+127.0.0.1 - - [12/Oct/2012:14:56:41 +0300] "GET /static/routes.js HTTP/1.1" 404 373
+127.0.0.1 - - [12/Oct/2012:14:56:42 +0300] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:42 +0300] "GET /stylesheets/all.css?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:42 +0300] "GET /javascripts/prototype.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:42 +0300] "GET /javascripts/effects.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:42 +0300] "GET /javascripts/dragdrop.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:42 +0300] "GET /javascripts/controls.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:42 +0300] "GET /javascripts/rails.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:42 +0300] "GET /javascripts/application.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:42 +0300] "GET /public/stylesheets/all.css HTTP/1.1" 404 378
+127.0.0.1 - - [12/Oct/2012:14:56:42 +0300] "GET /static/routes.js HTTP/1.1" 404 373
+127.0.0.1 - - [12/Oct/2012:14:56:42 +0300] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:42 +0300] "GET /stylesheets/all.css?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:42 +0300] "GET /javascripts/prototype.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:42 +0300] "GET /javascripts/effects.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:42 +0300] "GET /javascripts/dragdrop.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:42 +0300] "GET /javascripts/controls.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:42 +0300] "GET /javascripts/rails.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:42 +0300] "GET /javascripts/application.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:42 +0300] "GET /static/routes.js HTTP/1.1" 404 373
+127.0.0.1 - - [12/Oct/2012:14:56:42 +0300] "GET /public/stylesheets/all.css HTTP/1.1" 404 378
+127.0.0.1 - - [12/Oct/2012:14:56:42 +0300] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:42 +0300] "GET /stylesheets/all.css?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:42 +0300] "GET /javascripts/prototype.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:42 +0300] "GET /javascripts/effects.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:42 +0300] "GET /javascripts/dragdrop.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:42 +0300] "GET /javascripts/controls.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:42 +0300] "GET /javascripts/rails.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:42 +0300] "GET /javascripts/application.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:42 +0300] "GET /static/routes.js HTTP/1.1" 404 373
+127.0.0.1 - - [12/Oct/2012:14:56:42 +0300] "GET /public/stylesheets/all.css HTTP/1.1" 404 378
+127.0.0.1 - - [12/Oct/2012:14:56:42 +0300] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:42 +0300] "GET /stylesheets/all.css?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:42 +0300] "GET /javascripts/prototype.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:42 +0300] "GET /javascripts/effects.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:42 +0300] "GET /javascripts/dragdrop.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:42 +0300] "GET /javascripts/controls.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:42 +0300] "GET /javascripts/rails.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:42 +0300] "GET /javascripts/application.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:42 +0300] "GET /public/stylesheets/all.css HTTP/1.1" 404 378
+127.0.0.1 - - [12/Oct/2012:14:56:42 +0300] "GET /static/routes.js HTTP/1.1" 404 373
+127.0.0.1 - - [12/Oct/2012:14:56:43 +0300] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:43 +0300] "GET /stylesheets/all.css?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:43 +0300] "GET /javascripts/prototype.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:43 +0300] "GET /javascripts/effects.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:43 +0300] "GET /javascripts/dragdrop.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:43 +0300] "GET /javascripts/controls.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:43 +0300] "GET /javascripts/rails.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:43 +0300] "GET /javascripts/application.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:43 +0300] "GET /static/routes.js HTTP/1.1" 404 373
+127.0.0.1 - - [12/Oct/2012:14:56:43 +0300] "GET /public/stylesheets/all.css HTTP/1.1" 404 378
+127.0.0.1 - - [12/Oct/2012:14:56:43 +0300] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:43 +0300] "GET /stylesheets/all.css?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:43 +0300] "GET /javascripts/prototype.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:43 +0300] "GET /javascripts/effects.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:43 +0300] "GET /javascripts/dragdrop.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:43 +0300] "GET /javascripts/controls.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:43 +0300] "GET /javascripts/rails.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:43 +0300] "GET /javascripts/application.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:43 +0300] "GET /static/routes.js HTTP/1.1" 404 373
+127.0.0.1 - - [12/Oct/2012:14:56:43 +0300] "GET /public/stylesheets/all.css HTTP/1.1" 404 378
+127.0.0.1 - - [12/Oct/2012:14:56:43 +0300] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:43 +0300] "GET /stylesheets/all.css?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:43 +0300] "GET /javascripts/prototype.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:43 +0300] "GET /javascripts/effects.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:43 +0300] "GET /javascripts/dragdrop.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:43 +0300] "GET /javascripts/controls.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:43 +0300] "GET /javascripts/rails.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:43 +0300] "GET /javascripts/application.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:43 +0300] "GET /public/stylesheets/all.css HTTP/1.1" 404 378
+127.0.0.1 - - [12/Oct/2012:14:56:43 +0300] "GET /static/routes.js HTTP/1.1" 404 373
+127.0.0.1 - - [12/Oct/2012:14:56:44 +0300] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:44 +0300] "GET /stylesheets/all.css?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:44 +0300] "GET /javascripts/prototype.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:44 +0300] "GET /javascripts/effects.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:44 +0300] "GET /javascripts/dragdrop.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:44 +0300] "GET /javascripts/controls.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:44 +0300] "GET /javascripts/rails.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:44 +0300] "GET /javascripts/application.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:44 +0300] "GET /static/routes.js HTTP/1.1" 404 373
+127.0.0.1 - - [12/Oct/2012:14:56:44 +0300] "GET /public/stylesheets/all.css HTTP/1.1" 404 378
+127.0.0.1 - - [12/Oct/2012:14:56:44 +0300] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:44 +0300] "GET /stylesheets/all.css?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:44 +0300] "GET /javascripts/prototype.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:44 +0300] "GET /javascripts/effects.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:44 +0300] "GET /javascripts/dragdrop.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:44 +0300] "GET /javascripts/controls.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:44 +0300] "GET /javascripts/rails.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:44 +0300] "GET /javascripts/application.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:44 +0300] "GET /public/stylesheets/all.css HTTP/1.1" 404 378
+127.0.0.1 - - [12/Oct/2012:14:56:44 +0300] "GET /static/routes.js HTTP/1.1" 404 373
+127.0.0.1 - - [12/Oct/2012:14:56:44 +0300] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:44 +0300] "GET /stylesheets/all.css?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:44 +0300] "GET /javascripts/prototype.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:44 +0300] "GET /javascripts/dragdrop.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:44 +0300] "GET /javascripts/effects.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:44 +0300] "GET /javascripts/controls.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:44 +0300] "GET /javascripts/rails.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:44 +0300] "GET /javascripts/application.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:44 +0300] "GET /static/routes.js HTTP/1.1" 404 373
+127.0.0.1 - - [12/Oct/2012:14:56:44 +0300] "GET /public/stylesheets/all.css HTTP/1.1" 404 378
+127.0.0.1 - - [12/Oct/2012:14:56:44 +0300] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:44 +0300] "GET /stylesheets/all.css?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:44 +0300] "GET /javascripts/effects.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:44 +0300] "GET /javascripts/prototype.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:44 +0300] "GET /javascripts/dragdrop.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:44 +0300] "GET /javascripts/controls.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:44 +0300] "GET /javascripts/rails.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:44 +0300] "GET /javascripts/application.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:44 +0300] "GET /static/routes.js HTTP/1.1" 404 373
+127.0.0.1 - - [12/Oct/2012:14:56:44 +0300] "GET /public/stylesheets/all.css HTTP/1.1" 404 378
+127.0.0.1 - - [12/Oct/2012:14:56:45 +0300] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:45 +0300] "GET /stylesheets/all.css?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:45 +0300] "GET /javascripts/prototype.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:45 +0300] "GET /javascripts/dragdrop.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:45 +0300] "GET /javascripts/effects.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:45 +0300] "GET /javascripts/controls.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:45 +0300] "GET /javascripts/rails.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:45 +0300] "GET /javascripts/application.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:45 +0300] "GET /public/stylesheets/all.css HTTP/1.1" 404 378
+127.0.0.1 - - [12/Oct/2012:14:56:45 +0300] "GET /static/routes.js HTTP/1.1" 404 373
+127.0.0.1 - - [12/Oct/2012:14:56:45 +0300] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:45 +0300] "GET /stylesheets/all.css?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:45 +0300] "GET /javascripts/prototype.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:45 +0300] "GET /javascripts/effects.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:45 +0300] "GET /javascripts/dragdrop.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:45 +0300] "GET /javascripts/controls.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:45 +0300] "GET /javascripts/rails.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:45 +0300] "GET /javascripts/application.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:45 +0300] "GET /public/stylesheets/all.css HTTP/1.1" 404 378
+127.0.0.1 - - [12/Oct/2012:14:56:45 +0300] "GET /static/routes.js HTTP/1.1" 404 373
+127.0.0.1 - - [12/Oct/2012:14:56:45 +0300] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:45 +0300] "GET /stylesheets/all.css?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:45 +0300] "GET /javascripts/prototype.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:45 +0300] "GET /javascripts/effects.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:45 +0300] "GET /javascripts/dragdrop.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:45 +0300] "GET /javascripts/controls.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:45 +0300] "GET /javascripts/rails.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:45 +0300] "GET /javascripts/application.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:45 +0300] "GET /static/routes.js HTTP/1.1" 404 373
+127.0.0.1 - - [12/Oct/2012:14:56:45 +0300] "GET /public/stylesheets/all.css HTTP/1.1" 404 378
+127.0.0.1 - - [12/Oct/2012:14:56:46 +0300] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:46 +0300] "GET /stylesheets/all.css?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:46 +0300] "GET /javascripts/prototype.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:46 +0300] "GET /javascripts/effects.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:46 +0300] "GET /javascripts/dragdrop.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:46 +0300] "GET /javascripts/controls.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:46 +0300] "GET /javascripts/rails.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:46 +0300] "GET /javascripts/application.js?1349165806 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Oct/2012:14:56:46 +0300] "GET /static/routes.js HTTP/1.1" 404 373
+127.0.0.1 - - [12/Oct/2012:14:56:46 +0300] "GET /public/stylesheets/all.css HTTP/1.1" 404 378
